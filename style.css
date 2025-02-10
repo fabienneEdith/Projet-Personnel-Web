@@ -1,0 +1,355 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap");
+ :root{
+ 	--my-color-gris:#f3f5f8;
+ 	--my-color-gris-fonce:#3d535f;
+    --my-color-jaune:#ffe800;
+
+ }
+
+ *{
+ 	margin: 0px;
+  list-style-type: none;
+ 	padding:  2px;
+  box-sizing: border-box;
+ 	font-family:'Arial',monospace;
+
+ }
+ 
+ .container{
+background-color: honeydew;
+width: 100%;
+height: 100%;
+
+text-decoration: none;
+
+ }
+
+
+
+.dita{
+background-color: linen;
+text-decoration: none;
+font-size: 19px;
+font-family:'Calibri',monospace;
+
+
+ }
+
+
+
+
+
+
+
+
+ .ecole{
+top: 0px;
+background-color: var(--my-color-gris-fonce);
+text-decoration: none;
+height: 200px; 
+width:500px;
+border-radius:30px;
+border-color:var(--my-color-jaune) ;
+margin: 0px;
+cursor:initial;
+color: white;
+
+ }
+
+ .entete{
+   display: flex;
+   width: 1118px;
+   justify-content: space-around;
+   position: fixed;
+   line-height:50px;
+   z-index: 111;
+   background-color:honeydew;
+ }
+ .dita ul{
+  color: hotpink;
+  background-color: black;
+  font-size: 22px;
+ }
+  .logo{
+   display: flex;
+   font-size:30px ;
+   font-weight:800px ;
+   color: lightpink;
+   letter-spacing:3px ;
+   cursor: initial;
+   text-transform: uppercase;
+   
+ }
+ .logo b{
+
+   font-size:70px ;
+   font-weight:800px ;
+   color: hotpink;
+   
+ }
+ .logo span{
+   color: hotpink;
+   font-size: 39px;
+ }
+
+
+ .menu a{
+  text-decoration: none;
+  margin: 0 15px; 
+  font-size: 30;
+  color: var(--my-color-gris-fonce);
+  letter-spacing: 3px;
+  text-transform: capitalize;
+
+}
+ .menu ul{
+  display: flex;
+ 
+}
+
+
+.reseaux a{
+  font-size: 30px;
+  color: var(--my-color-gris-fonce);
+  margin: 25px 10px;
+ }
+ .menu li:hover a, .reseaux a:hover{
+  color: hotpink;
+}
+
+ 
+
+.ecole:hover{
+ 
+ background-color: var(--my-color-jaune); 
+}
+
+.ecriture:hover{
+ 
+color: var(--my-color-gris-fonce); 
+}
+
+
+ body{
+  background-color: pink;
+ }
+ .corps{
+  margin-top: 150px;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+ justify-content: center;
+ align-items: center;
+ padding: 0 10%;
+ overflow: hidden;
+}
+.Cgauche, .Cdroite{
+width: 50%;
+ 
+}
+.Cgauche{
+z-index:5px ;
+ 
+}
+.textB{
+  display: block;
+ position: relative;
+ font-size: 25px;
+ letter-spacing: 5px;
+ color: var(--my-color-gris-fonce);
+}
+.textB::after{
+ position: absolute;
+ content: '';
+ height:4px ;
+ width: 45px;
+ bottom: 10px;
+ background-color: var(--my-color-jaune);
+}
+
+h3{
+ display: block;
+ font-size: 1.5em;
+ font-weight: 900px;
+ color: var(--my-color-gris-fonce);
+}
+p{
+  display: flex;
+  width: 90%;
+  font-size: 15px;
+ 
+  color: var(--my-color-gris-fonce);
+
+}
+
+.btn2{
+  width: 100%;
+  position: relative;
+  left:50px ;
+  text-decoration: none;
+  
+ 
+}
+button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400px;
+  background-color: var(--my-color-gris-fonce);
+  color: white;
+  padding: 8px 14px;
+  margin: 40px 5px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  box-shadow: 0px 15px 18px rgba(0, 0, 0, 4);
+}
+button:hover{
+ background-color: plum; 
+}
+
+.groupImage{
+ position: relative;
+ width: 100%;
+ height: 100%;
+}
+.groupImage img{
+  margin-top:50px;
+ position: relative;
+ height: 70%;
+ width: calc(120%);
+ right:-25px ;
+ top: 5px;
+ animation:animateImg 505s linear infinite ;
+}
+
+@keyframes animateImg{
+  50%{
+    right: 10px;
+    top: 15px;
+
+  }
+}
+
+.groupImage #idspl{
+ position: absolute;
+ top: 350px;
+ left: 100%;
+ animation: animatesplash 15505s linear infinite;
+}
+
+@keyframes animatesplash{
+50% {
+right: 10px;
+top:10px;
+width: 30px;
+}
+}
+.corps::before{
+ position: absolute; 
+ content: '';
+ height:60px;
+ width: 60px;
+ border-radius: 50%;
+ background: linear-gradient(105deg,#ffe800,pink);
+ left: 30PX;
+ top: 3px;
+ animation: beforeAnime 20s linear infinite;
+}
+
+@keyframes beforeAnime {
+  50%{
+    left: -5px;
+    top: 5%;
+  }}
+
+ #textDefil{
+color: hotpink;
+}
+.img2:hover 
+{
+transition: ;
+left: 10px;
+}
+
+.accueil{
+  width: 100%;
+ min-height:200vh;
+  background-color:mintcream;
+   margin: 100px;
+  text-decoration: none;
+  }
+
+/* Pour les petits écrans (smartphones et tablettes) */
+@media (max-width: 768px) {
+    /* Réduire la taille du texte dans l'entête */
+    .logo {
+        color: transparent;
+    }
+
+   .logo  span{
+        color: transparent;
+    } 
+
+    .logo b {
+        color: transparent;
+    }
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu a {
+        font-size: 10px;
+        margin: 5px 0;
+    }
+
+    /* Réduire l'espace et ajuster les éléments de la page */
+    .corps {
+        flex-direction: column;
+        padding: 5%;
+        margin-top: 0px;
+    }
+
+    .Cgauche, .Cdroite {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Cgauche {
+        z-index: 5;
+    }
+
+    /* Ajuster l'image */
+    .groupImage img {
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    /* Réduire les boutons */
+    button {
+        padding: 6px 10px;
+        font-size: 12px;
+        margin: 15px 4px;
+
+    }
+
+    /* Réduire la taille des sections à propos et passion */
+    .dita {
+        font-size: 16px;
+    }
+
+    .propos, .passion {
+        font-size: 18px;
+        margin-top: 0px;
+    }
+    .entete{
+     
+   background-color: transparent;
+   color: transparent;
+
+ }
+}
+
+
